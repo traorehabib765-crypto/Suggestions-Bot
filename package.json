@@ -1,17 +1,25 @@
 {
-  "name": "suggestion-bot",
-  "version": "2.0.0",
-  "description": "A full-featured Discord suggestion bot using Components v2. Made by ayliee, Aerox Development.",
-  "main": "index.js",
+  "name": "mc-afk-bot",
+  "version": "1.0.0",
+  "description": "Minecraft AFK bot controlled via Discord",
+  "main": "src/index.js",
   "type": "module",
   "scripts": {
-    "start": "node index.js"
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   },
   "dependencies": {
     "discord.js": "^14.18.0",
-    "dotenv": "^16.4.5"
+    "dotenv": "^16.4.5",
+    "express": "^5.2.1",
+    "mineflayer": "^4.35.0",
+    "mineflayer-pathfinder": "^2.4.5",
+    "prismarine-auth": "^2.7.0"
   },
-  "engines": {
-    "node": ">=18.0.0 <22.0.0"
+  "devDependencies": {
+    "nodemon": "^3.1.0"
   }
 }
